@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/dafeiji.css" />
+		<script src="" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/gameEngine.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/myPlane.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bullets.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/enemy.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script>
+
+			  window.onload=function () {
+
+			      //1.获取每一个li标签，给每一个li标签绑定点击事件
+
+				  var oLis=document.getElementById('list').children;
+
+              	for(var i=0;i<oLis.length;i++) {
+                  oLis[i].onclick=function () {
+                  	
+					gameEngin.init().start();
+                   
+                  }
+              	}
+              }
+
+
+
+						
+		</script>
+	</head>
+	<body>
+		
+		<div id="main_body" class="main">
+			<ul id="list">
+				<li value="1000">超级困难</li>
+				<li value="500">非常困难</li>
+				<li value="250">比较困难</li>
+				<li value="80">春哥附体</li>
+			</ul>
+		</div>
+		
+	</body>
+</html>
